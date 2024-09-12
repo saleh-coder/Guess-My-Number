@@ -9,6 +9,10 @@ Feedback Messages: Provides feedback on whether the guess is too high, too low, 
 Score Tracking: Tracks the player's score, which decreases with each incorrect guess.
 Game Over Condition: The game ends when the score reaches zero, and the player is notified.
 
+## Current Status
+
+The game is currently in development. Some features may not be fully implemented, and there may be bugs or incomplete functionality.
+
 ## How to Play
 
 1. Start the Game: Reload the page to generate a new random number.
@@ -46,3 +50,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Inspired by classic number guessing games.
 
 Special thanks to the open-source community for their tools and libraries.
+
+
