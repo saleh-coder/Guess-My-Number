@@ -22,6 +22,10 @@ document.querySelector('.check').addEventListener('click', function () {
   } else if (guess === secretNumber) {
     document.querySelector('.message').textContent = '🎉 Correct number!'; // Displays a success message
 
+    document.querySelector('body').style.backgroundColor = '#60b347';
+
+    document.querySelector('.number').style.width = '30rem';
+
     // If the guess is higher than the secret number
   } else if (guess > secretNumber) {
     // If the score is still greater than 1, decrease the score and continue the game
