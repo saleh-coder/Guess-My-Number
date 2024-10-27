@@ -1,12 +1,11 @@
 'use strict';
 
 // Generates a random secret number between 1 and 20
-const secretNumber = Math.trunc(Math.random() * 20) + 1;
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
 // Initializes the score to 20
 let score = 20;
 
 // Displays the secret number in the interface (can be hidden in the final game)
-document.querySelector('.number').textContent = secretNumber;
 
 // Adds a click event listener to the 'check' button
 document.querySelector('.check').addEventListener('click', function () {
@@ -21,6 +20,7 @@ document.querySelector('.check').addEventListener('click', function () {
     // Checks if the player guessed the correct number
   } else if (guess === secretNumber) {
     document.querySelector('.message').textContent = '🎉 Correct number!'; // Displays a success message
+    document.querySelector('.number').textContent = secretNumber;
 
     document.querySelector('body').style.backgroundColor = '#60b347';
 
